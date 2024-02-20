@@ -1,0 +1,144 @@
+
+@import url("css/header.css");
+@import url("css/hero.css");
+@import url("css/collections.css");
+@import url("css/subscribe.css");
+/* other css file imports 
+
+@import url("css/about.css");
+
+@import url("css/trending.css");*/
+
+@import url("css/footer.css"); 
+
+:root {
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  
+    --primary-color: #EEEEEE;
+    --secondary-color: #1A1A1A;
+  
+    --gray: #707070;
+    --border-gray: #383838e5;
+    --color-creamson: #fff0de;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:var(--plus-jakarta-sans);
+    
+}
+
+@media only screen and(max-width:1320px) {
+    nav{
+        padding: 0 50x;
+    }
+}
+@media only screen and(max-width:1100px) {
+    nav{
+        padding: 0 50x;
+    }
+}
+
+
+
+/* responsive on mobile*/
+
+@media only screen and (max-width:1000px) {
+    
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-x: hidden;
+    font-size: 20px;
+    
+}
+.nav_links{
+    display: none;
+
+}
+.show_nav{
+    padding-top: 20px;
+    display: flex;
+    background-color: #fff ; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.show_navs{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.nav_links .link{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+
+
+}
+.navbar form{
+    display: none;
+}
+.navbar_toggle{
+    margin-left: 5%;
+    margin-right: 50px;
+    font-size: 30px;
+    color: #000000;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+}
+.logo-header{
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+
+#close-btn{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.hero h1{
+    width: 90vw;
+    font-size: 60px;
+}
+.hero img{
+   width: 90vw;
+   position: relative;
+   top:-40px;
+   
+}
+.newsletter form{
+    max-width: 100%;
+    height: 36px;
+}
+.newsletter form button{
+    font-size: 13px;
+    font-weight: 500;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+}

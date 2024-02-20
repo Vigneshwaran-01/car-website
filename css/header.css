@@ -1,0 +1,111 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 2% ;
+    color: #000000;
+    align-items: center;
+    overflow-x: hidden;
+    z-index: 100;
+}
+.navbar-logo{
+   
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.logo-header{
+    display: flex;
+    margin-left: 2%;
+
+}
+
+.nav_links{
+  display: flex;
+  margin-right: 20px;
+  list-style: none;
+  gap: 50px;
+  color: #000000;
+  font-size: 19px;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.nav_links .nav_link a{
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+ .nav_links .nav_link a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--gray);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+} 
+.nav_links .nav_link a:hover::after{
+    color: var(--gray);
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+}
+.navbar form{
+    display: flex;
+    height: 30px;
+    
+    padding: 2px;
+    min-width: 400px !important;
+    border: 1px solid var(--border-gray);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: var(--primary-color);
+
+}
+.navbar form input{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px ;
+    color: #000;
+    font-weight: 500;
+    background: none;
+    border: none;
+    border-left: 1px solid #000;
+    outline: none;
+}
+.navbar form button{
+    padding: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+  
+}
+
+.navbar_toggle{
+    display: none;
+}
+
+.contact{
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border:1px solid #383838e5;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #000;
+}
+#close-btn{
+    display: none;
+    position: absolute;
+}

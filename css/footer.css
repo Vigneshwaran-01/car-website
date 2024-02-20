@@ -1,0 +1,43 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+}
+.footer_links{
+    flex-wrap: wrap;
+    padding:10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.blog_des{
+    max-width: 280px;
+    
+}
+.blog_des p{
+    margin-top: 10px;
+}
+.link_1,.link_2,.link_3,.link_4{
+    list-style: none;
+}
+.link-headline{
+    font-size: 22px;
+    color: rgb(133, 133, 133);
+}
+
+
+
+
+
+
+.rights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
